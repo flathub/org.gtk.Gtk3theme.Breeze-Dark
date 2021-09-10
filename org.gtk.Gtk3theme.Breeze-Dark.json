@@ -19,7 +19,7 @@
       "sources": [
         {
           "type": "git",
-          "url": "https://anongit.kde.org/breeze-gtk.git",
+          "url": "https://invent.kde.org/plasma/breeze-gtk.git",
           "tag": "v5.14.3"
         }
       ]
