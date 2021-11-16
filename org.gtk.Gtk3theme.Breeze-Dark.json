@@ -4,23 +4,18 @@
   "runtime": "org.freedesktop.Platform",
   "build-extension": true,
   "sdk": "org.freedesktop.Sdk",
-  "runtime-version": "19.08",
+  "runtime-version": "21.08",
   "appstream-compose": false,
   "separate-locales": false,
   "modules": [
     {
       "name": "breeze",
-      "buildsystem": "simple",
-      "build-commands": [
-        "install -dm755 /usr/share/runtime/share/themes/Breeze-Dark/gtk-3.0",
-        "cp -a Breeze-dark-gtk/assets /usr/share/runtime/share/themes/Breeze-Dark/gtk-3.0",
-        "sed -e 's|../assets|assets|g' Breeze-dark-gtk/gtk-3.20/gtk.css > /usr/share/runtime/share/themes/Breeze-Dark/gtk-3.0/gtk.css"
-      ],
+      "buildsystem": "cmake-ninja",
       "sources": [
         {
-          "type": "git",
-          "url": "https://invent.kde.org/plasma/breeze-gtk.git",
-          "tag": "v5.14.3"
+          "type": "archive",
+          "url": "https://download.kde.org/stable/plasma/5.23.3/breeze-gtk-5.23.3.tar.xz",
+          "sha256": "76bf9712d45b6f821b9174de283e2d2c3ed202ce375cd306d7d41ea9e8080373"
         }
       ]
     },
