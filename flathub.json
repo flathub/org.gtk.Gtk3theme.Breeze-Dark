@@ -1,3 +1,5 @@
 {
-    "skip-icons-check": true
+    "skip-icons-check": true,
+    "end-of-life": "This theme has been replaced by org.gtk.Gtk3theme.Breeze, see README for workaround on using system color schemes. https://github.com/flathub/org.gtk.Gtk3theme.Breeze#workarounds",
+    "end-of-life-rebase": "org.gtk.Gtk3theme.Breeze"
 }
